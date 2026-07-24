@@ -1,0 +1,13 @@
+{
+  "name": "mermaid-visualiser",
+  "version": "1.0.0",
+  "description": "Live mermaid diagram viewer/editor over file-based projects",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mermaid": "^11.4.1"
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mermaid Visualiser</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside id="sidebar">
+    <header>
+      <h1>Mermaid Visualiser</h1>
+      <span id="live-dot" class="dot" title="Live connection status"></span>
+    </header>
+    <ul id="project-list"></ul>
+    <button id="new-project">+ New project</button>
+  </aside>
+
+  <main id="main">
+    <div id="toolbar">
+      <div id="title">
+        <strong id="project-name">—</strong>
+        <select id="version-select" title="Version"></select>
+        <span id="updated-note"></span>
+      </div>
+      <div id="actions">
+        <button id="toggle-editor">Edit</button>
+        <button id="save" class="primary" hidden>Save</button>
+        <button id="save-new" hidden title="Save as a new version">Save as v+1</button>
+      </div>
+    </div>
+    <div id="content">
+      <div id="editor-pane" hidden>
+        <textarea id="editor" spellcheck="false"></textarea>
+      </div>
+      <div id="diagram-pane">
+        <div id="diagram"><p class="placeholder">Select a project</p></div>
+        <pre id="render-error" hidden></pre>
+      </div>
+    </div>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
